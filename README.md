@@ -1,14 +1,12 @@
-python -m venv vr_venv
+python -m venv vr_munkalap
 
-vr_venv\Scripts\activate
+vr_munkalap\Scripts\activate
 
-ha megjelenik a (vr_venv) a konzolon akkor működött
+ha megjelenik a (vr_munkalap) a konzolon akkor működött
 
-git clone https://github.com/KCsaba75/vr_fullstack2.git
+git clone https://github.com/KCsaba75/vr_Munkalap.git
 
-cd vr_fullstack2
-
-pip install django
+cd vr_munkalap
 
 pip install -r requirements.txt
 
