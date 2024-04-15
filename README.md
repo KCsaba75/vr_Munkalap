@@ -6,7 +6,7 @@ ha megjelenik a (vr_venv) a konzolon akkor működött
 
 git clone 
 
-cd vr_fullstack
+cd vr_fullstack2
 
 pip install -r requirements.txt
 
