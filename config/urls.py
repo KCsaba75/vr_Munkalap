@@ -14,5 +14,4 @@ urlpatterns = [
     path('api/munkalapUj/', views. UjMunkalapCreateView.as_view(), name='uj_munkalap_json'), 
     path('api/gepjarmuOsszes/', views. OsszesGepjarmuJsonView.as_view(), name='osszes_gepjarmuvek_json'), 
 
-
 ]
