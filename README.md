@@ -4,7 +4,7 @@ vr_venv\Scripts\activate
 
 ha megjelenik a (vr_venv) a konzolon akkor működött
 
-git clone 
+git clone https://github.com/KCsaba75/vr_fullstack2.git
 
 cd vr_fullstack2
 
