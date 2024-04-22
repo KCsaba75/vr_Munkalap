@@ -4,15 +4,18 @@ from django.urls import path, include
 from rest_framework import routers
 
 from mymunkalap_app import views
-from  . import views as  config_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/munkalapAktiv/', views. AktivMunkalapokJsonView.as_view(), name='aktiv_munkalapok_json'),
-    path('api/munkalapInAktiv/', views. InAktivMunkalapokJsonView.as_view(), name='inaktiv_munkalapok_json'), 
-    path('api/munkalapOsszes/', views. OsszesMunkalapokJsonView.as_view(), name='osszes_munkalapok_json'), 
-    path('api/munkalapUj/', views. UjMunkalapCreateView.as_view(), name='uj_munkalap_json'), 
-    path('api/gepjarmuOsszes/', views. OsszesGepjarmuJsonView.as_view(), name='osszes_gepjarmuvek_json'), 
-
-
+    path('api/megrendelok/', views.MegrendeloListCreate.as_view()),
+    path('api/megrendelok/<int:pk>/', views.MegrendeloRetrieveUpdateDestroy.as_view()),
+    path('api/hibatipusok/', views.HibatipusokListCreate.as_view()),
+    path('api/hibatipusok/<int:pk>/', views.HibatipusokRetrieveUpdateDestroy.as_view()),
+    path('api/munkalapok/', views.MunkalapListCreate.as_view()),
+    path('api/munkalapok/<int:pk>/', views.MunkalapRetrieveUpdateDestroy.as_view()),
+  
+    path('api/munkalapAktiv/', views. AktivMunkalapokJsonView.as_view()),
+    path('api/munkalapInAktiv/', views. InAktivMunkalapokJsonView.as_view()), 
+    path('api/munkalapOsszes/', views. OsszesMunkalapokJsonView.as_view()), 
 ]
